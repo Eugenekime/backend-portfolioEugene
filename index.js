@@ -14,7 +14,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use("/projects", router);
+app.use("/", router);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
